@@ -1,5 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -10,7 +14,7 @@ header {
     background-color: #014371;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 1px 0;
     font-size: 1.2rem;
 }
 
@@ -29,7 +33,7 @@ h1 {
 nav {
     background-color: #000;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 nav ul {
@@ -54,8 +58,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
-
 h2 {
     color: #666;
     border-bottom: 2px solid #eee;
@@ -66,25 +68,25 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card-about {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card-resources {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -140,6 +142,6 @@ footer {
   }
   
 footer img {
-    width: 30px;
+    width: 10px;
     vertical-align: middle;
 }
