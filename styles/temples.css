@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4b006e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: #670793;
+	color: #000;
+	cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: none; /* Hidden until toggled */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #4b006e;
+    position: absolute;
+    top: 60px; /* Push below the header */
+    left: 0;
+    z-index: 1000; /* Ensure it's above everything */
+}
+
+.navigation.open {
+    display: flex; /* Show when toggled */
+}
+
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Add separation */
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+nav {
+	background-color: #4b006e;
+    max-width: 700px;
+	margin: 1rem auto;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
+figure {
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlight {
+    color: #fdd566;
+    font-weight: bold;
+}
+
+footer {
+    background: #4b006e;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
