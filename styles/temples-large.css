@@ -1,59 +1,59 @@
 @media (min-width: 740px) {
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-    h2 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
 
-    #menu{
+    #menu {
         display: none;
     }
 
-    .navigation{
-        display: flex !important; /* Always show */
+    .navigation {
+        display: flex !important;
         flex-direction: row;
-        position: static; /* Reset position */
-        background: none; /* Remove background color */
+        position: static;
+        background: none;
     }
 
     .navigation a {
-		display: block;
-		padding: 1rem;
-	}
-
-    #menu {
-        display: none; /* Hide menu button */
+        display: block;
+        padding: 1rem;
     }
 
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
+    #menu {
+        display: none;
+    }
 
-	main {
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 20px;
-        
         padding: 20px;
     }
 
-	.image-container {
+    .image-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 1rem;
     }
 
-    .image-container h1 {
+    .image-container h2 {
         grid-column: 1 / -1;
         position: relative;
         top: 0;
@@ -68,8 +68,8 @@
     }
 
     img {
-        width: 100%; /* Ensure images take full width of their container */
+        width: 100%;
         height: auto;
-		max-width: 100%;
+        max-width: 100%;
     }
 }
