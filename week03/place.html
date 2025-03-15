@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 a page about a place a visit before in my country ">
+    <meta name="author" content="Frodo Pano">
+    <title>WDD 131 Country page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dinamos</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/dinamos-small.webp" media="(max-width: 500px)">
+                <source srcset="images/dinamos-medium.webp" media="(max-width: 1000px)">
+                <img src="images/dinamos.webp" alt="Dinamos mountain">
+            </picture>
+            <div class="overlay">
+                <section class="data">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> 24.29 km²</p>
+                    <p><strong>Population:</strong> 247,622</p>
+                    <p><strong>City:</strong> CDMX</p>
+                    <p><strong>Languages:</strong> Spanish</p>
+                    <p><strong>Currency:</strong> Mexican peso</p>
+                    <p><strong>Time Zone:</strong> UTC+6</p>
+                    <p><strong>Calling Code:</strong> +52</p>
+                    <p><strong>Internet TLD:</strong> .mx</p>
+                </section>
+                <hr>
+                <section class="weather">
+                    <h2>Weather 🌥️</h2>
+                    <span class="weather-icon">
+                        <img src="images/wheater.svg" alt="Weather Icon" class="svg-icon">
+                    </span>
+                    <p><strong>Temperature:</strong> 19 °C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> 10 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+                    
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🐼 Frodo Pano Martín 🐼 Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
