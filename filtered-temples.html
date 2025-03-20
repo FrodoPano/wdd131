@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <meta name="description" content="WDD 131 Album of picture of the temple">
+    <meta name="author" content="Frodo Pano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+    <title>WDD 131 | Frodo Pano | Filtered Temple Album</title>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container">
+            <h2>Home</h2>
+            <!-- Temple cards will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright-year"></span> 🐼 Frodo Pano 🐼  México</p>
+        <p>Last Update: <span id="last-modified" class="highlight"></span></p>
+    </footer>
+</body>
+</html>
