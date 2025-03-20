@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+    background: aquamarine;
+    animation: fade 5s;
+    display: block;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+footer, header{
+    text-align: center;
+    background-color: aqua;
+}
