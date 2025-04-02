@@ -83,6 +83,10 @@ textarea {
     color: #e67e22;
 }
 
+option{
+    color: gray;
+}
+
 .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
