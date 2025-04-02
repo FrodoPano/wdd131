@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Local Time</title>
+    <meta name="description" content="WDD 131 Time Zone - My Local Time">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="images/watch.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/my-time.css">
+    <script src="scripts/my-time.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/watch.png" alt="Time Zone Logo" class="logo">
+            <div class="header-main">
+                <div class="header-title-nav">
+                    <h1>My Local Time</h1>
+                    <button class="hamburger-btn" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="timezone.html">Home</a></li>
+                            <li><a href="map.html">Map</a></li>
+                            <li><a href="my-time.html">My Time</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="time-container">
+        <div class="clock-container">
+            <div class="clock-face">
+                <div class="clock-center"></div>
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
+                <div class="clock-numbers">
+                    <span style="--i:1">1</span>
+                    <span style="--i:2">2</span>
+                    <span style="--i:3">3</span>
+                    <span style="--i:4">4</span>
+                    <span style="--i:5">5</span>
+                    <span style="--i:6">6</span>
+                    <span style="--i:7">7</span>
+                    <span style="--i:8">8</span>
+                    <span style="--i:9">9</span>
+                    <span style="--i:10">10</span>
+                    <span style="--i:11">11</span>
+                    <span style="--i:12">12</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="time-info">
+            <h2>Your Current Time</h2>
+            <div class="digital-clock"></div>
+            <div class="timezone-info"></div>
+            <div class="location-info"></div>
+            <div class="date-info"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> Time Zone Project</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
